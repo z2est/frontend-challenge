@@ -1,0 +1,44 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+
+.navbar__logo {
+    margin-left: 1rem;
+}
+
+.navbar__logo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    
+}
+
+.navbar__toggle{
+    display: none;
+}
+
+.navbar__menu{
+    display: flex;
+    margin-right: 5rem;
+}
+
+.navbar__menu > li {
+    margin-left: 5rem;
+    
+    &.selected {
+        box-shadow: inset 0 -2px 0 $text-color;
+        // inset : shadow 안쪽에 그려진다.
+        // box-shadow (x y blush 색상)
+    }
+}
+
+.navbar__menu > li > a{
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    text-decoration: none;
+}

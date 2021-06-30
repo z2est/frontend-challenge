@@ -1,0 +1,32 @@
+// 공통으로 쓰는 부분
+@import "./variables";
+
+body{
+    background: purple;
+    font-family: "Noto Sans KR", "sans-serif";
+}
+
+a{
+    color: $text-color;
+}
+
+.container {
+    display: grid;
+}
+
+.container__video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+.root {
+    position: absolute;
+    display: grid;
+    min-width: 100%;
+    min-height: 100%;
+    grid-template-rows: 80px 1fr;
+}
