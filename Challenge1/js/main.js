@@ -4,12 +4,10 @@ window.onload = function() {
     
     const navbarMenu = document.querySelectorAll(".navbar__menu li");
     const menuLength = navbarMenu.length;
-    console.log(navbarMenu);
     
     if(menuLength > 0){
         
         for(let obj=0; obj < menuLength; obj++){
-            console.log("mememem");
             navbarMenu[obj].addEventListener("click", function() {
                 /**
                  * 기존 selected가 있었던 것을 지운다.
