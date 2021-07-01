@@ -35,10 +35,10 @@ export class Navbar {
   onSelect(e) {
     if (e.target.tagName !== "A") return;
 
-    const li = e.target.parentElement;
+    const li = e.target.closest("li");
     const menuItems = [...this._menu.children];
 
-    if (li.tagName !== 'LI' || li.classList.contains(this._activeClassName)) return;
+    if (!li || li.classList.contains(this._activeClassName)) return;
 
     this._activeIndex = menuItems.indexOf(li);
 
