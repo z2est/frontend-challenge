@@ -19,8 +19,8 @@ export class Navbar {
     this.assignElements();
     this.attachEventHandlers();
 
-    const initialLi = this._menu.querySelector(`li:nth-child(${this._activeIndex + 1})`);
-    initialLi && initialLi.classList.add(this._activeClassName);
+    const activeLi = this._menu.querySelector(`li:nth-child(${this._activeIndex + 1})`);
+    activeLi && activeLi.classList.add(this._activeClassName);
   }
 
   assignElements() {
@@ -36,9 +36,9 @@ export class Navbar {
     if (e.target.tagName != "A") return;
 
     const li = e.target.parentElement;
-    const menuItems = [...this._menu.children] || null;
+    const menuItems = [...this._menu.children];
 
-    if (!menuItems || li.classList.contains(this._activeClassName)) return;
+    if (li.tagName !== 'LI' || li.classList.contains(this._activeClassName)) return;
 
     this._activeIndex = menuItems.indexOf(li);
 
