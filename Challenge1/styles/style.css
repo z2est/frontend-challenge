@@ -43,8 +43,11 @@ table {
   border-spacing: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  background: purple;
   font-family: "Noto Sans KR", "sans-serif";
 }
 
@@ -52,28 +55,28 @@ a {
   color: #fff;
 }
 
-.container {
+main {
   display: -ms-grid;
   display: grid;
-}
-
-.container__video {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.root {
-  position: absolute;
-  display: -ms-grid;
-  display: grid;
-  min-width: 100%;
-  min-height: 100%;
   -ms-grid-rows: 80px 1fr;
       grid-template-rows: 80px 1fr;
+  z-index: 10;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#video video {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar {
