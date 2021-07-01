@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR", "sans-serif";
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", "sans-serif";
 }
 
 a {
@@ -79,6 +79,14 @@ main {
      object-fit: cover;
 }
 
+.form-control {
+  margin-top: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 1.563rem;
+  background: rgba(121, 190, 74, 0.5);
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,47 +104,42 @@ main {
   background: transparent;
 }
 
-.navbar__logo {
-  margin-left: 1rem;
-}
-
-.navbar__logo a {
+.navbar .navbar__logo a {
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.navbar__toggle {
+.navbar .navbar__toggle {
   display: none;
 }
 
-.navbar__menu {
+.navbar .navbar__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 5rem;
 }
 
-.navbar__menu > li {
+.navbar .navbar__menu li {
   margin-left: 5rem;
 }
 
-.navbar__menu > li.selected {
+.navbar .navbar__menu li.selected {
   -webkit-box-shadow: inset 0 -2px 0 #fff;
           box-shadow: inset 0 -2px 0 #fff;
 }
 
-.navbar__menu > li > a {
+.navbar .navbar__menu > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80px;
+  min-height: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
 }
 
-.mainsection {
+.intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +156,7 @@ main {
           flex-direction: column;
 }
 
-.mainsection > .mainsection__intro {
+.intro .intro__contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,23 +172,18 @@ main {
           align-items: center;
 }
 
-.mainsection > div > .mainsection__intro--head {
+.intro .intro__contents .intro__contents--title {
   font-size: 2.3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.mainsection > div > .mainsection__intro--body {
+.intro .intro__contents .intro__contents--body {
   font-size: 1.5rem;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
-.mainsection > input {
-  margin-top: 20px;
-  border-radius: 10px;
-  width: 300px;
-  height: 25px;
-  background: rgba(121, 190, 74, 0.5);
-  border: 0;
-  outline: 0;
+.intro .form-control {
+  width: 18.75rem;
+  height: 1.563rem;
 }
 /*# sourceMappingURL=style.css.map */
