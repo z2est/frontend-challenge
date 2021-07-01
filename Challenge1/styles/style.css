@@ -124,10 +124,6 @@ main {
   display: flex;
 }
 
-.navbar .navbar__menu li {
-  margin-left: 5rem;
-}
-
 .navbar .navbar__menu li.selected {
   -webkit-box-shadow: inset 0 -2px 0 #fff;
           box-shadow: inset 0 -2px 0 #fff;
@@ -138,6 +134,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   min-height: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
