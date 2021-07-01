@@ -33,7 +33,7 @@ export class Navbar {
   }
 
   onSelect(e) {
-    if (e.target.tagName != "A") return;
+    if (e.target.tagName !== "A") return;
 
     const li = e.target.parentElement;
     const menuItems = [...this._menu.children];
