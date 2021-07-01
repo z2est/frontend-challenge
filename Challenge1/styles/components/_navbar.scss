@@ -5,6 +5,11 @@
   align-items: center;
   background: transparent;
 
+  &.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   & .navbar__logo {
     // margin-left: 1rem;
     & a {
