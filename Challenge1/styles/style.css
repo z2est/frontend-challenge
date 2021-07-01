@@ -43,6 +43,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Noto Sans KR", "sans-serif";
 }
@@ -51,9 +55,15 @@ a {
   color: #fff;
 }
 
-#root {
-  overflow: hidden;
-  height: 100vh;
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px 1fr;
+      grid-template-rows: 80px 1fr;
+  z-index: 10;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #video {
@@ -67,17 +77,6 @@ a {
 #video video {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 80px 1fr;
-      grid-template-rows: 80px 1fr;
-  z-index: 10;
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .navbar {

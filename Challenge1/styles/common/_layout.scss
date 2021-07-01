@@ -1,6 +1,10 @@
 // 공통으로 쓰는 부분
 @import "./variables";
 
+html {
+    height: 100%;
+}
+
 body{
     font-family: "Noto Sans KR", "sans-serif";
 }
@@ -9,9 +13,13 @@ a{
     color: $text-color;
 }
 
-#root {
-    overflow: hidden;
-    height: 100vh;
+main {
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    z-index: 10;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #video {
@@ -24,13 +32,4 @@ a{
     video {
         object-fit: cover;
     }
-}
-
-#main {
-    display: grid;
-    grid-template-rows: 80px 1fr;
-    z-index: 10;
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
 }
