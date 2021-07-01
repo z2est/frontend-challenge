@@ -104,6 +104,11 @@ main {
   background: transparent;
 }
 
+.navbar.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .navbar .navbar__logo a {
   font-size: 1.5rem;
   text-decoration: none;
