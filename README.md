@@ -9,6 +9,6 @@
 ![캡처](/images/Challenge1.gif)
 
 ### Challenge 2
-* 심플한 Admin 페이지 만들기
-* 왼쪽 배치 메뉴 바
+* 심플한 로그인페이지 만들기
+
 

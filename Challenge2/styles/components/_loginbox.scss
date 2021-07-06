@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__loginbox {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #660099;
+    border-radius: 20px;
+}
