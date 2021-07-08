@@ -12,19 +12,44 @@
 }
 
 .container__header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     width: 100%;
     height: 150px;
 
+    grid-template-areas: "logo logo logo"
+                         "normal oneoff qrcode";
     justify-content: center;
+    align-items: center;
+
+
+
+    div {
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin-right: 10px;
+    }
+
 }
 
-.container__header--logo {
-    width : 300px;
+.container__header--loginlogo {
+    width: 300px;
     height: 80px;
+    grid-area: logo;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.container__header--logintype {
-    font-weight: bold;
+.container__header--normal{
+    grid-area: normal;
+}
+
+.container__header--oneoff {
+    grid-area: oneoff;
+}
+
+.container__header--qrcode {
+    grid-area: qrcode;
 }
