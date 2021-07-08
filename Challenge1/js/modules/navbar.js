@@ -1,5 +1,10 @@
 "use strict";
 
+/**
+ * PR받은 개선된 코드 전체 분석
+ * 
+ */
+
 export class Navbar {
   constructor({
     el = null,
