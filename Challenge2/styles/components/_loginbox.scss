@@ -21,9 +21,7 @@
     justify-content: center;
     align-items: center;
 
-
-
-    div {
+    div[class*="container__header--type-"] {
         text-align: center;
         border-bottom: 1px solid gray;
         margin-right: 10px;
@@ -42,14 +40,14 @@
     }
 }
 
-.container__header--normal{
+.container__header--type-normal{
     grid-area: normal;
 }
 
-.container__header--oneoff {
+.container__header--type-oneoff {
     grid-area: oneoff;
 }
 
-.container__header--qrcode {
+.container__header--type-qrcode {
     grid-area: qrcode;
 }

@@ -82,7 +82,7 @@ table {
           align-items: center;
 }
 
-.container__header div {
+.container__header div[class*="container__header--type-"] {
   text-align: center;
   border-bottom: 1px solid gray;
   margin-right: 10px;
@@ -102,19 +102,19 @@ table {
   height: 100%;
 }
 
-.container__header--normal {
+.container__header--type-normal {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: normal;
 }
 
-.container__header--oneoff {
+.container__header--type-oneoff {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: oneoff;
 }
 
-.container__header--qrcode {
+.container__header--type-qrcode {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: qrcode;
