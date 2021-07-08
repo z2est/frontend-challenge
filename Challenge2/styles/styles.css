@@ -4,6 +4,25 @@ body {
   min-height: 100%;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__loginbox {
+  width: 500px;
+  height: 500px;
+  border: 1px solid #660099;
+  border-radius: 20px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,25 +68,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container__loginbox {
-  width: 500px;
-  height: 500px;
-  border: 1px solid #660099;
-  border-radius: 20px;
-}
-
 .container__header {
   display: -ms-grid;
   display: grid;
@@ -84,7 +84,7 @@ table {
 
 .container__header div[class*="container__header--type-"] {
   text-align: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid gray;
   margin-right: 10px;
 }
 
