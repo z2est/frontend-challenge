@@ -123,13 +123,34 @@ table {
 .container__body {
   width: 100%;
   height: 250px;
-  background: black;
 }
 
 .container__body--control {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.container__body--control input {
+  width: 40%;
+  height: 15%;
+  margin-bottom: 10px;
+}
+
+.container__body--control button {
+  margin-top: 10px;
+  width: 40%;
+  height: 15%;
 }
 /*# sourceMappingURL=styles.css.map */

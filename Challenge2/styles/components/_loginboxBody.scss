@@ -1,10 +1,27 @@
 .container__body {
     width: 100%;
     height: 250px;
-    background: black;
+
 }
 
-.container__body--control {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+
+.container__body--control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+
+    input {
+        width: 40%;
+        height: 15%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+        width:40%;
+        height: 15%;
+    }
 }
