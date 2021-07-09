@@ -109,6 +109,7 @@ table {
 }
 
 .container__header li[class*="container__header--type-"].selected {
+  font-weight: bold;
   color: black;
   border-bottom: 2px solid black;
 }

@@ -24,6 +24,7 @@
         }
 
         &.selected {
+            font-weight: bold;
             color: black;
             border-bottom: 2px solid black;
             // inset : shadow 안쪽에 그려진다.
