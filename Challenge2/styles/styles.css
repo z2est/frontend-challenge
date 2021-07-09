@@ -22,7 +22,7 @@ html, body {
   width: 300px;
   height: 350px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid #660099;
+  border: 0;
   border-radius: 20px;
 }
 
@@ -161,6 +161,9 @@ table {
   width: 60%;
   height: 18%;
   margin-bottom: 10px;
+  border-radius: 10px;
+  border: 0;
+  text-indent: 10px;
 }
 
 .container__body--control button {
