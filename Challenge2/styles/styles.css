@@ -18,7 +18,7 @@ body {
 
 .container__loginbox {
   width: 300px;
-  height: 400px;
+  height: 350px;
   border: 1px solid #660099;
   border-radius: 20px;
 }
@@ -74,14 +74,14 @@ table {
   display: flex;
   font-size: small;
   width: 100%;
-  height: 100px;
+  height: 30%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -120,10 +120,7 @@ table {
 
 .container__body {
   width: 100%;
-  height: 200px;
-}
-
-.container__body--control {
+  height: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +134,24 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container__body--control {
+  width: 100%;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container__body--control input {
@@ -158,5 +172,23 @@ table {
 
 .container__body--thirdparty i {
   color: #a332ff;
+}
+
+.container__footer {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__footer span {
+  font-size: small;
+  color: gray;
 }
 /*# sourceMappingURL=styles.css.map */

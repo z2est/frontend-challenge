@@ -3,11 +3,11 @@
     font-size: small;
 
     width: 100%;
-    height: 100px;
+    height: 30%;
 
     flex-direction: column;
 
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     div[class*="container__header--type-"] {

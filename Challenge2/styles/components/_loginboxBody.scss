@@ -1,17 +1,21 @@
 .container__body {
     width: 100%;
-    height: 200px;
-
-}
-
-
-.container__body--control{
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+// Q1. 상위 컨테이너 바디의 justify-content 속성이 하위 엘리먼트들에게 반영안됨
+.container__body--control{
+    width: 100%;
     height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     input {
         width: 60%;
