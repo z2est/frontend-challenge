@@ -14,6 +14,6 @@
 * flexbox에 대해 이해하기
 * border 속성에 대해 이해하기
 * FontAwesome CSS Library 사용해보기
-<img src="/images/Challenge2.png" width="700">
+<img src="/images/Challenge2.png">
 
 
