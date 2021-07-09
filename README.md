@@ -10,7 +10,7 @@
 
 ### Challenge 2
 * 심플한 로그인페이지 만들기
-* opcity와 background에서의 투명도에 대한 이해하기
+* opacity와 background에서의 투명도 차이 이해하기
 * flexbox에 대해 이해하기
 * border 속성에 대해 이해하기
 * FontAwesome CSS Library 사용해보기
