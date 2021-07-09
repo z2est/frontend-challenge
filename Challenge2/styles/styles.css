@@ -2,11 +2,8 @@ html, body {
   font-family: "Noto Sans KR", "sans-serif";
   background-image: url("https://www.shinsegae.com/resources/site/img/main/gate_bg.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
-}
-
-div {
-  cursor: none;
 }
 
 .container {
