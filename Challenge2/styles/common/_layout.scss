@@ -1,18 +1,22 @@
-body{
+html, body{
     font-family: "Noto Sans KR", "sans-serif";
-    min-width: 100%;
-    min-height: 100%;
+    background-image: url("https://www.shinsegae.com/resources/site/img/main/gate_bg.jpg");
+    background-size: cover;
+
+    height: 100%;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .container__loginbox {
     width: 300px;
     height: 350px;
+    background-color: rgba( 255, 255, 255, 0.5 );
     border: 1px solid #660099;
     border-radius: 20px;
 }
