@@ -195,6 +195,10 @@ table {
   color: #a332ff;
 }
 
+.container__body--submit {
+  overflow: hidden;
+}
+
 .container__footer {
   height: 10%;
   display: -webkit-box;
