@@ -12,12 +12,13 @@ button {
   height: 50px;
   margin-bottom: 10px;
 }
-.btn__style1:after,
-.btn__style1:before {
+button:after,
+button:before {
     content: '';
     transition: all 300ms ease-in-out;
 }
 
+/* Button Style 1 */
 .btn__style1:after {
     content: '>>';
     float: right;
@@ -29,4 +30,10 @@ button {
 .btn__style1:hover:after{
     opacity: 1;
     width: 20px;
+}
+
+/* Button Style 2 */
+.btn__style2:hover{
+    background: blue;
+    transform: scale(1.1);
 }

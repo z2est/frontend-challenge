@@ -17,13 +17,14 @@ button {
   margin-bottom: 10px;
 }
 
-.btn__style1:after,
-.btn__style1:before {
+button:after,
+button:before {
   content: '';
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
+/* Button Style 1 */
 .btn__style1:after {
   content: '>>';
   float: right;
@@ -35,5 +36,12 @@ button {
 .btn__style1:hover:after {
   opacity: 1;
   width: 20px;
+}
+
+/* Button Style 2 */
+.btn__style2:hover {
+  background: blue;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=styles.css.map */
