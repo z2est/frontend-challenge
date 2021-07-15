@@ -1,8 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 button {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-  width: 120px;
+  width: 150px;
   height: 50px;
+  margin-bottom: 10px;
+}
+
+.btn__style1:after,
+.btn__style1:before {
+  content: '';
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.btn__style1:after {
+  content: '>>';
+  float: right;
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.btn__style1:hover:after {
+  opacity: 1;
+  width: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
