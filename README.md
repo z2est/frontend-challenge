@@ -18,3 +18,5 @@
 <img src="/images/Challenge2.png">
 
 ### Challenge 3
+* after, before 가상엘리먼트를 이해합니다.
+* Hover 가상 클래스를 이해합니다.
